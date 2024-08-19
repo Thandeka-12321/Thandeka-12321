@@ -1,0 +1,254 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General body and html styling */
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4; /* Light background for better readability */
+}
+
+
+/* App container styling */
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('./pic2.jpg'); /* Background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* Header styling */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker for better readability */
+  color: #ff6347; /* Tomato color for better visibility */
+  z-index: 1000; /* Ensure it’s above other content */
+}
+
+
+header h1 {
+  font-size: 2.5rem; /* Adjust font-size for visibility */
+  margin: 0;
+}
+
+/* Doctor availability section styling */
+.doctor-availability {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background for better text visibility */
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin: 100px 20px 20px;
+}
+
+
+/* Timestamp styling */
+.timestamp {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+
+/* Button styling */
+button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Form and error message styling */
+.booking-form, .appointment-list {
+  background-color: rgba(255, 255, 255, 0.95); /* Slightly more opaque background */
+  color: #212529;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error {
+  color: red;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+
+/* Form elements */
+form {
+  margin: 25px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px; /* Reduced margin for tighter layout */
+  font-size: 1.1rem;
+}
+
+input, select {
+  width: 100%; /* Full width for better layout */
+  padding: 12px;
+  font-size: 1rem; /* Slightly smaller font-size for better proportion */
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  transition: border-color 0.3s; /* Added transition for border color */
+}
+
+input:focus, select:focus {
+  border-color: #007bff; /* Highlighted border color on focus */
+  outline: none; /* Removed default outline for better appearance */
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table headers */
+/* General table styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Table headers */
+.table th {
+  border: 1px solid black; /* Black border for table headers */
+  padding: 12px;
+  text-align: left;
+  color: black; /* Black text color for headers */
+}
+
+/* Table cells */
+.table td {
+  border: 1px solid black; /* Black border for table cells */
+  padding: 12px;
+  text-align: left;
+  color: black; /* Black text color for cells */
+}
+
+/* Optional: Add some styling for table rows */
+.table tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.05); /* Light gray background for even rows */
+}
+
+.table tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1); /* Slightly darker gray for odd rows */
+}
+
+
+
+
+/* Pagination buttons styling */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.appointments-list {
+  padding: 20px;
+}
+
+.appointments-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.appointments-list th, .appointments-list td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.appointments-list th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.appointments-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.appointments-list button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.appointments-list button:hover {
+  background-color: #c0392b;
+}
